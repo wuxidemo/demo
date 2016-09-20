@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/qrcode_reader_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/cover_center"
+            android:layout_width="@dimen/qrcode_reader_view_size"
+            android:layout_height="@dimen/qrcode_reader_view_size"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bg_qr_outside_box"
+            >
+
+            <ImageView
+                android:id="@+id/qrcode_reader_green_line"
+                android:layout_width="@dimen/qrcode_reader_view_size"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_qr_scan_line"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cover_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/cover_center"
+            android:background="@color/black_blur"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/cover_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/cover_center"
+            android:background="@color/black_blur"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cover_center"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/cover_right"
+            android:layout_toRightOf="@id/cover_left"
+            android:background="@color/black_blur"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_24"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/cover_center"
+            android:layout_toLeftOf="@id/cover_right"
+            android:layout_toRightOf="@id/cover_left"
+            android:background="@color/black_blur"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="请将顾客的付款码放入取景框内"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_12"
+                />
+
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/btn_smf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_22"
+                app:cpb_colorIndicator="@color/colorPrimary"
+                app:cpb_colorIndicatorBackground="@android:color/white"
+                app:cpb_paddingProgress="5dp"
+                app:cpb_selectorIdle="@drawable/btn_circular_idle_selector"
+                app:cpb_textIdle="点我付款"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额"
+                android:textSize="@dimen/font_28"
+                />
+
+            <EditText
+                android:id="@+id/edt_total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请填写收款金额"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textSize="@dimen/font_20"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout_keyboard"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/digitkeypad_1"
+                style="@style/Button_Keyboard"
+                android:text="1"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_2"
+                style="@style/Button_Keyboard"
+                android:text="2"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_3"
+                style="@style/Button_Keyboard"
+                android:text="3"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout_keyboard"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/digitkeypad_4"
+                style="@style/Button_Keyboard"
+                android:text="4"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_5"
+                style="@style/Button_Keyboard"
+                android:text="5"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_6"
+                style="@style/Button_Keyboard"
+                android:text="6"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout_keyboard"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/digitkeypad_7"
+                style="@style/Button_Keyboard"
+                android:text="7"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_8"
+                style="@style/Button_Keyboard"
+                android:text="8"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_9"
+                style="@style/Button_Keyboard"
+                android:text="9"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout_keyboard"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/digitkeypad_0"
+                style="@style/Button_Keyboard"
+                android:text="0"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_point"
+                style="@style/Button_Keyboard"
+                android:text="•"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff666666"
+                />
+
+            <Button
+                android:id="@+id/digitkeypad_clean"
+                style="@style/Button_Keyboard"
+                android:text="清除"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/digitkeypad_sure"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_keyboard_sure_selector"
+            android:text="确定"
+            android:textSize="@dimen/font_28"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

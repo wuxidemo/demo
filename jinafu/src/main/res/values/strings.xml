@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">金阿福商户版</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="network_unavailable">无网络连接</string>
+    <string name="connect_server_error">服务器连接失败</string>
+
+    <string name="label_account">账号</string>
+    <string name="label_psd">密码</string>
+    <string name="login">登录</string>
+
+
+    <string name="error_account">请输入账号</string>
+    <string name="error_pwd">请输入密码</string>
+    <string name="error_phone_null">请输入手机号码</string>
+    <string name="error_phone">请输入正确的手机号码</string>
+    <string name="error_verification_null">请输入验证码</string>
+    <string name="error_phone_modify">请获取验证码</string>
+
+    <string name="error_psw_again">请再次输入密码</string>
+
+    <string name="error_psw_format">密码为6-18位字母和数字组合</string>
+
+    <string name="error_psw_modify">请确认密码</string>
+
+
+    <string name="tips_scan">将二维码放入取景框内，即可自动扫描</string>
+
+
+    <string name="continue_scan">继续扫描</string>
+
+    <string name="back">返回</string>
+    <string name="save">完成</string>
+
+    <string name="checking">核销卡券</string>
+    <string name="title_activity_forget_pwd_first">找回密码</string>
+
+    <string name="title_activity_forget_pwd_second">重置密码</string>
+
+    <string name="product_about">　　金阿福e服务结合微信端的支付、卡券、周边“摇一摇”来发挥巨大效能，目的将商圈内餐饮、休闲娱乐、大型商场等行业串联在一起，并实施智慧城市互联网+的核心策略，专注O2O让整体服务能力移动化、社交化、便捷化。
+            \r\n　　金阿福商户版是一个集收款、退款、卡券核销、收款纪录、核销纪录等功能的App，商家只需接入我们的平台即可便捷的实现收银相关的功能。
+    </string>
+
+
+    <string name="about">关于</string>
+
+    <string name="is_sure_close">　　请确认该二维码是否已经被顾客扫描并且顾客正在付款中，若确认关闭此订单请点击关闭，否则点击取消。</string>
+
+
+    <string name="weixin">微信支付</string>
+
+    <string name="zhifubao">支付宝支付</string>
+
+    <string name="tiaomafu">条码付</string>
+    <string name="saomafu">扫码付</string>
+
+    <string name="zhifu">支付</string>
+
+    <string name="zf_sucess">支付成功</string>
+    <string name="zf_fail">支付失败</string>
+    <string name="zf_refund_apply">申请退款</string>
+    <string name="zf_refund_dealing">退款中</string>
+    <string name="zf_refund_ok">退款成功</string>
+    <string name="zf_refund_fail">退款失败</string>
+    <string name="zf_unknow">状态未知</string>
+
+    <string name="total_amount">请输入支付金额</string>
+
+    <string name="app_tip">提示</string>
+    <string name="getting_prepayid">正在生成订单二维码</string>
+
+
+    <!--核销纪录-->
+    <string name="owner">拥有人</string>
+    <string name="checked_time">使用时间</string>
+    <string name="friend">补贴(元)</string>
+    <array name="checked_cards">
+        <item>全部</item>
+    </array>
+
+    <string name="ok">确定</string>
+    <string name="complete">完成</string>
+
+    <string name="checked_num">核销卡券：</string>
+    <string name="checked_money">银行应付：</string>
+
+    <string name="nodata">暂无数据</string>
+
+    <string name="calendar">日历</string>
+
+    <string name="menu_sk">收款</string>
+    <string name="menu_skjl">收款记录</string>
+    <string name="menu_hx">核销卡券</string>
+    <string name="menu_hxjl">核销记录</string>
+
+
+    <string name="trade_no">交易号</string>
+    <string name="out_trade_no">订单号</string>
+    <string name="pay_type">支付方式</string>
+    <string name="send_pay_date">支付时间</string>
+
+
+    <string name="pay_result">支付结果</string>
+    <string name="pay_qrcode">付款码</string>
+    <string name="pay_scan">扫一扫</string>
+
+
+    <!--核销纪录-->
+    <string name="receive_num">总订单：</string>
+    <string name="receive_money">当天收入：</string>
+    <array name="receive_type">
+        <item>全部</item>
+        <item>支付宝</item>
+        <item>微信</item>
+    </array>
+
+    <string name="label_cash">请输入收款金额</string>
+
+</resources>
