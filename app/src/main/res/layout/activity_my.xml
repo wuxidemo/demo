@@ -1,12 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#ff00ff"
+    android:gravity="center_vertical"
     >
 
 
-    <com.yf.demo.MyView
+    <!--com.yf.demo.MyView
         android:layout_width="500dp"
         android:layout_height="match_parent"
         android:background="#ffffff"
@@ -18,12 +19,31 @@
         android:layout_height="wrap_content"
         android:text="Android"
         android:textSize="36sp"
-        android:layout_toRightOf="@+id/myview"
+
         android:layout_marginLeft="100px"
         android:layout_marginTop="100dp"
+        /-->
+
+    <com.yf.demo.TopBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mytopbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/myview"
+        custom:leftBackground="@drawable/blue_button"
+        custom:leftText="Back"
+        custom:leftTextColor="#FFFFFF"
+
+        custom:rightBackground="@drawable/blue_button"
+        custom:rightText="More"
+        custom:rightTextColor="#FFFFFF"
+
+        custom:title="自定义标题"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="20sp"
         />
 
 
 
-
-</RelativeLayout>
+</LinearLayout>
