@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="CountDownButtonView">
-        <attr name="text" format="string"></attr>
-        <attr name="time" format="integer"></attr>
-        <attr name="format" format="string"></attr>
-    </declare-styleable>
-</resources>
